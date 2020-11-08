@@ -58,7 +58,7 @@ code {
   top: 15px;
   /* color: white; */
   right: 0rem;
-  background-color: rgba(136, 255, 0, 0.911);
+  /* background-color: rgba(136, 255, 0, 0.911); */
   padding: 0.5rem 0.7rem 0.5rem 0.7rem;
   border-radius: 10px;
   /* margin-top: -20rem; */
@@ -102,4 +102,24 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.green {
+  background-color: rgba(136, 255, 0, 0.911);
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+header input {
+  border-radius: 10px;
+}
+
+header input:focus{
+  border-radius: 10px;
 }

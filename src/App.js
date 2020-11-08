@@ -40,6 +40,7 @@ function App() {
       <form onSubmit={handleOnSubmit}>
         <input 
           type="search"
+          value={searchTerms}
           className="search"
           placeholder="Write something.."
           onChange={handleOnChange}
