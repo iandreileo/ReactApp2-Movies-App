@@ -18,20 +18,22 @@ function App() {
     .then((res) => res.json())
     .then((data) => {
       setMovies(data.results);
+      console.log(movies)
     });
   }
 
   const handleOnSubmit = (e) => {
     e.preventDefault();
-
-    getMovies(CONST.SEARCH_API + searchTerms);
-    setSearchTerms('');
+    if(searchTerms){
+      getMovies(CONST.SEARCH_API + searchTerms);
+      setSearchTerms("");
+    }
   }
 
   const handleOnChange = (e) => {
     setSearchTerms(e.target.value);
   }
-  
+
   return (
     <>
     <header>
